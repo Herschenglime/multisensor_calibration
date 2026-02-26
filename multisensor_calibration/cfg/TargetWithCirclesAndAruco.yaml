@@ -14,15 +14,15 @@ marker_positions:       # Top-left corner of each marker relative to center (0,0
     data: [-0.413, 0.263,   # Marker 1 (Top-Left)
            0.278, 0.263,    # Marker 2 (Top-Right)
            0.278, -0.128,   # Marker 3 (Bottom-Right)
-           0.413, -0.128]   # Marker 4 (Bottom-Left)
+           -0.413, -0.128]  # Marker 4 (Bottom-Left)
 cutouts:                
     rows: 1
     cols: 16            # Increased to 16 for 4 cutouts (4 parameters each)
     dt: f
     data: [1, -0.1125, 0.1125, 0.09,   # ID, X, Y, Radius
-           1, 0.1125 0.1125, 0.09,    # Added 4th cutout for symmetry
+           1, 0.1125, 0.1125, 0.09,    # Added 4th cutout for symmetry
            1, 0.1125, -0.1125, 0.09,   
            1, -0.1125, -0.1125, 0.09]  
 min_marker_detection: 2 
 cad_model_mesh: "calibration_target_4holes_cad_mesh.ply" 
-cad_model_cloud: "calibration_target_4holes_cad_cloud.ply",
+cad_model_cloud: "calibration_target_4holes_cad_cloud.ply"
